@@ -48,6 +48,7 @@ paths:
       operationId: createChatCompletion
       tags:
         - Chat
+        - text-generation
       summary: Creates a model response for the given chat conversation.
       requestBody:
         required: true
@@ -682,6 +683,7 @@ paths:
       operationId: createCompletion
       tags:
         - Completions
+        - text-generation
       summary: Creates a completion for the provided prompt and parameters.
       requestBody:
         required: true
@@ -8679,6 +8681,7 @@ paths:
       operationId: createResponse
       tags:
         - Responses
+        - text-generation
       summary: >
         Creates a model response. Provide [text](/docs/guides/text) or
 

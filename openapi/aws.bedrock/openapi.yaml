@@ -26,6 +26,8 @@ paths:
   /model/{modelId}/converse:
     post:
       operationId: Converse
+      tags:
+        - text-generation
       summary: Send a conversation message
       description: |-
         Sends a multi-turn conversation message to the specified model.
@@ -80,6 +82,8 @@ paths:
   /model/{modelId}/converse-stream:
     post:
       operationId: ConverseStream
+      tags:
+        - text-generation
       summary: Send a streaming conversation message
       description: |-
         Sends a multi-turn conversation message to the specified model and receives the response as a stream of events.

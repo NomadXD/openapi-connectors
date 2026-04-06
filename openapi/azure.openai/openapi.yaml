@@ -20,6 +20,8 @@ security:
 paths:
   /completions:
     post:
+      tags:
+        - text-generation
       summary: Creates a completion for the provided prompt, parameters and chosen model.
       operationId: Completions_Create
       parameters:
@@ -351,6 +353,8 @@ paths:
                   - usage
   /chat/completions:
     post:
+      tags:
+        - text-generation
       summary: Creates a completion for the chat message
       operationId: ChatCompletions_Create
       parameters:

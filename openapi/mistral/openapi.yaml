@@ -122,6 +122,7 @@ paths:
                 $ref: '#/components/schemas/HTTPValidationError'
       tags:
         - beta.conversations
+        - text-generation
     get:
       summary: List all created conversations.
       description: Retrieve a list of conversation entities sorted by creation time.
@@ -225,6 +226,7 @@ paths:
                 $ref: '#/components/schemas/HTTPValidationError'
       tags:
         - beta.conversations
+        - text-generation
   /v1/conversations/{conversation_id}/history:
     get:
       summary: Retrieve all entries in a conversation.
@@ -546,6 +548,7 @@ paths:
                 $ref: '#/components/schemas/HTTPValidationError'
       tags:
         - beta.conversations
+        - text-generation
 
   /v1/conversations/{conversation_id}/restart/stream:
     post:
@@ -1249,6 +1252,7 @@ paths:
                 $ref: '#/components/schemas/HTTPValidationError'
       tags:
         - chat
+        - text-generation
   /v1/fim/completions:
     post:
       summary: Fim Completion
@@ -1303,6 +1307,7 @@ paths:
                 $ref: '#/components/schemas/HTTPValidationError'
       tags:
         - agents
+        - text-generation
   /v1/embeddings:
     post:
       summary: Embeddings

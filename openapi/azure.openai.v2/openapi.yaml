@@ -1601,6 +1601,7 @@ paths:
         as input for the model's response.
       tags:
         - Responses
+        - text-generation
       parameters:
         - in: query
           name: api-version
